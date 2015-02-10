@@ -15,14 +15,70 @@
             <li><a href="mailto:david.yin@yale.edu">David</a></li>
         </ul>
     </header>
-    <h1>Team bk lounge</h1>
-    <h1>Project Status Report</h1>
-    <span id="date">February 11th, 2015</span>
+    <div class="title">
+        <h1>Team bk lounge</h1>
+        <h2>Project Status Report</h2>
+        <span id="date">February 11th, 2015</span>
+    </div>
+    <h3>Burn Down Chart</h3>
+        <img src="http://i.imgur.com/43Ftb47.png" title="source: imgur.com" />
+    <h3>Sprint Write-up</h3>
+        <p>
+            In the same vein of the first sprint, we began this sprint by 
+            breaking down all the remaining user stories into individual sprint 
+            items and sorted them in terms of difficulty (expected time for 
+            completion). For ideal work distribution, we chose individual sprint
+            items and balanced the workload for each team member.
+        </p>
+        <p>
+            Drew was assigned the sprint items about building out the RSVP 
+            functionality. This was accomplished by adding a form to the event 
+            detail creation page, which used an HTML form and a post request. 
+            Then, we built out a simple validation check that ensured that only 
+            Yale email addresses were accepted as RSVPs, case insensitive.
+        </p>
+        <p>
+            David created the event-creating form for the project. It has the 
+            attribute method="POST" and also requires users to specify the 
+            following attributes of an event: title, location, image, year, 
+            month, day, hour, and minute. This resulted in a decrease in story 
+            points by 2.
+        </p>
+        <p>
+            Chew then completed the form validation part of project - which 
+            primarily included error checking. The form for creating new events 
+            now display errors to the user when the inputted time (year, month, 
+            day, hour) is incorrect. Furthermore, the form also now checks if 
+            the uploaded image is in the acceptable formats - GIF, PNG or URL. 
+            In addition, location and event title is now limited to between 5 
+            and 50 characters. Ultimately, 4 story points were completed.
+        </p>
+    <h3>Next Sprint</h3>
+        <p>
+            At the end of this sprint, our team was given an additional few
+            user stories. In the next sprint, the main feature we need to add
+            is tracking of users. This will be done through the use of 
+            referral headers, and by adding donation links to the event pages.
+            Hopefully, this will allow us to better target our intended users,
+            and focus on new features that get the most traffic. Additionally,
+            we need to style the whole site to improve the user experience 
+            across the board.
+        </p>
+    <h3>Sprint Completed Stories</h3>
+        <ol>
+            <li>RSVP functionality for events</li>
+            <li>RSVP only for Yale email addresses</li>
+            <li>Event form creation</li>
+            <li>Event form validation and error recognition</li>
+        </ol>
     
-    <h2>Burn Down Chart</h2>
-    <h2>Sprint Write-up</h2>
-    <h2>Next Sprint</h2>
-    <h2>Sprint Completed Stories</h2>
-    <h2>Product Backlog (in order of priority)</h2>
+    
+    
+    <h3>Product Backlog (in order of priority)</h3>
+        <ol>
+            <li>Allow Tracking of users</li>
+            <li>Add donation links to events</li>
+            <li>Style the entire site</li>
+        </ol>
     
 </body>
