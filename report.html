@@ -46,64 +46,40 @@
         <span id="date">February 11th, 2015</span>
     </div>
     <h3>Burn Down Chart</h3>
-        <img src="http://i.imgur.com/43Ftb47.png" title="source: imgur.com" />
+        <img src="http://i.imgur.com/dUwSXnD.png" title="source: imgur.com" />
     <h3>Sprint Write-up</h3>
         <p>
-            In the same vein of the first sprint, we began this sprint by 
-            breaking down all the remaining user stories into individual sprint 
-            items and sorted them in terms of difficulty (expected time for 
-            completion). For ideal work distribution, we chose individual sprint
-            items and balanced the workload for each team member.
+            Upon the completion of the first two sprints, 3 additional story points were added to increase the visibility and functionality of our website. We included the last sprints story points in our current burn down chart to give added context, since this sprint was expected to be shorter. We were tasked with profiling our users and running A/B testing to determine optimal site features, in addition to a self-imposed site redesign.
         </p>
         <p>
-            Drew was assigned the sprint items about building out the RSVP 
-            functionality. This was accomplished by adding a form to the event 
-            detail creation page, which used an HTML form and a post request. 
-            Then, we built out a simple validation check that ensured that only 
-            Yale email addresses were accepted as RSVPs, case insensitive.
+            David and Chew gathered additional details about the first new user story (aka went to office hours). We determined that we needed to install some analytics software to be able to track our users by referral and determine who went to what pages on the site. Additionally, we decided to run some A/B testing on both the home page and the event detail pages to encourage RSVPs and donations, respectively. Finally, we decided on a modern redesign for the site, including transparent overlay and a scrolling background.
         </p>
         <p>
-            David created the event-creating form for the project. It has the 
-            attribute method="POST" and also requires users to specify the 
-            following attributes of an event: title, location, image, year, 
-            month, day, hour, and minute. This resulted in a decrease in story 
-            points by 2.
+            First, we got google analytics up and running. After a slight hiccup with the source of traffic (out of our control), we had reports coming in on the flows of different users. Unfortunately, due to technical difficulties, we still were not able to capture the referral sites of our users, as the only one we captured was mgt656.som.yale.edu. However, we could see the flows and determined that the all events page was rarely visited, and instead users clicked right to the event detail pages. So we removed that link from the homepage, and instead added a dropdown menu of all events onto the navbar.
         </p>
         <p>
-            Chew then completed the form validation part of project - which 
-            primarily included error checking. The form for creating new events 
-            now display errors to the user when the inputted time (year, month, 
-            day, hour) is incorrect. Furthermore, the form also now checks if 
-            the uploaded image is in the acceptable formats - GIF, PNG or URL. 
-            In addition, location and event title is now limited to between 5 
-            and 50 characters. Ultimately, 4 story points were completed.
+            Next, we added A/B testing to our code using google analytics. The first test we added was if adding the word RSVP to the events on the homepage increased our click-through rate. As of yet, the tests are inconclusive, with about a 7% conversion (click through) rate for when RSVP is there and 4% rate when it is not. This will undergo further analysis in later sprints.
+        </p>
+        <p>
+            Finally, for our site redesign, we attempted to go with a modern bootstrap-y look. We added a navbar to the top of all pages, which includes links to the homepage, the about page, the API, and we added a dropdown of all events. We also added a semi-transparent container to hold the main content of each page, and a scrolling background using Backstretch.js jquery library.
         </p>
     <h3>Next Sprint</h3>
         <p>
-            At the end of this sprint, our team was given an additional few
-            user stories. In the next sprint, the main feature we need to add
-            is tracking of users. This will be done through the use of 
-            referral headers, and by adding donation links to the event pages.
-            Hopefully, this will allow us to better target our intended users,
-            and focus on new features that get the most traffic. Additionally,
-            we need to style the whole site to improve the user experience 
-            across the board.
+            In future sprints, we will further analyze the user statistics and add more A/B tests to tailor our design and content to our core users.
         </p>
     <h3>Sprint Completed Stories</h3>
         <ol>
-            <li>RSVP functionality for events</li>
-            <li>RSVP only for Yale email addresses</li>
-            <li>Event form creation</li>
-            <li>Event form validation and error recognition</li>
+            <li>Set up Google Analytics to track number of site visits</li>
+            <li>Determine the origin of the site visits</li>
+            <li>Webpage design improvements</li>
         </ol>
     
     
     
     <h3>Product Backlog (in order of priority)</h3>
         <ol>
-            <li>Allow Tracking of users</li>
-            <li>Add donation links to events</li>
-            <li>Style the entire site</li>
+            <li>Further analysis user statistics using google analytics</li>
+            <li>A/B test on donation link</li>
         </ol>
     <footer>
         <a href="http://github.com/bk-lounge/mgt656-project-status-report">Github Page</a>
